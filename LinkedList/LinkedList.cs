@@ -63,6 +63,15 @@ namespace LinkedList
 
                 Count++;
             }
+                public Node<T> GetLastNode(Node<T> newNode)
+            {
+                newNode = Head;
+               while (newNode.Next != null)
+                {
+                    newNode = newNode.Next;
+                }
+                return newNode;
+            }
 
             public void RemoveFirst()
             {
